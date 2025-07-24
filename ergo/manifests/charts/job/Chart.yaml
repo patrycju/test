@@ -1,0 +1,6 @@
+apiVersion: v2
+name: admanager-batch
+description: A Helm chart for AdManager batch jobs running on Kubernetes
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
