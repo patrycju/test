@@ -34,6 +34,7 @@ spec:
       ref: rancher-manifests
   destination:
     namespace: edmanager
+    server: https://kubernetes.default.svc
   syncPolicy:
     automated:
       prune: true
