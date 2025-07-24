@@ -6,7 +6,7 @@ metadata:
   namespace: default
   annotations:
     argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/sync-wave: "-10"
+    argocd.argoproj.io/sync-wave: "-2"
 spec:
   encryptedData:
     asdf: AgAHMPJZpjkglCdvOaqlnz/hOMgRfC1nEmuMb02/KccN+/5EJUkPr9jPwbazMD1YyYkPqhVLztmlZsNKJCgUVapvdVnl731d+By804BlALvXfzmKbf0jAT5noF5fv7sPX4mByqijE+IzrlgRtoFltOCVdzn3RPEL4kGotUQzm/bE8delSem0/8v/AuH0CQP1l7z4R8MUp9fNkoUS487UPGDq5/vfFj3D1rBbfztvpBy+vhXHTSP+3/mT+2kZBGcmGYVUx++vOBnbnaWjahG+DVy4KiVqJokJyUj5JLNIndZ5c2jrxvR5C6tOqnvh5iSFyd1GGD0gVOoloG8i7kA8IblYTkQXfKhgNcZwCjVqjtdO360DXNqYDo0cFWeQ48vox4Z3iHpJWHjlOjXRTgcz4XNdM8V3AtEAcOHeJjzMlhTdUd2DKFBKkzpK/WWljhzi0FBqsPNnlyhhlfPU+mbmnQl5F+c4WVQg/WUIQvg+aq/5e6ZE2jvQbXX+Y9HbG4PI1hu7+e4/C5ygAb1/DJEsoAlk4q7LyY+o6dM+Erybu9D3bBUI2KZH98sMSDOCKm6intTnNPRdvOOKeTsEy/6Sr1yosUCcm6BsNXApN5qHv6vsbXoh+lZEX5Ofg8v/2icms5mfqwnBGWcaeHrOv+WNRoXW2VA5rkLmPRUKCr+yvhSVM4FXfBuTWih4Icf5rMVu/NzD7WkVuCxwdbiXZbPOaoSY3SqTVA==
