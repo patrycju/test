@@ -8,6 +8,13 @@ metadata:
 spec:
   project: default
   sources:
+    - chart: raw
+      repoURL: 'https://bedag.github.io/helm-charts/'
+      targetRevision: 2.0.0
+      helm:
+        releaseName: secrets
+        valueFiles:
+          - $rancher-manifests/ergo/manifests/secrets/configs.yaml
     - path: ergo/manifests/charts/application
       repoURL: https://github.com/patrycju/test.git
       targetRevision: master
@@ -22,13 +29,6 @@ spec:
         releaseName: db-migrations
         valueFiles:
           - $rancher-manifests/ergo/manifests/db-migs/configs.yaml
-    - chart: raw
-      repoURL: 'https://bedag.github.io/helm-charts/'
-      targetRevision: 2.0.0
-      helm:
-        releaseName: secrets
-        valueFiles:
-          - $rancher-manifests/ergo/manifests/secrets/configs.yaml
     - repoURL: https://github.com/patrycju/test.git
       targetRevision: master
       ref: rancher-manifests
@@ -36,10 +36,6 @@ spec:
     namespace: edmanager
     server: https://kubernetes.default.svc
   syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
-      allowEmpty: false
     syncOptions:
     - PrunePropagationPolicy=foreground
     - PruneLast=true
