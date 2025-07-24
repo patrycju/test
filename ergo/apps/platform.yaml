@@ -6,7 +6,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: edmanager
+  project: default
   sources:
     - path: ergo/manifests/charts/application
       repoURL: https://github.com/patrycju/test.git
