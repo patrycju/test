@@ -1,0 +1,22 @@
+arguments:
+  - sleep
+  - 5
+
+fullnameOverride: db-migrations
+
+batch:
+  type: job
+
+annotations:
+  argocd.argoproj.io/hook: PreSync
+  argocd.argoproj.io/sync-wave: "-1"
+  argocd.argoproj.io/hook-delete-policy: BeforeHookCreation
+  argocd.argoproj.io/sync-options: Replace=true
+
+serviceAccount:
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/sync-wave: "-2"
+
+secretEnv:
+  LANGFUSE_API_KEY: langfuse:asdf
